@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Algebra and Analytical Geometry</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Linear Algebra and Analytical Geometry</h1>
+        <label for="task">Choose a task:</label>
+        <select id="task">
+            <option value="matrix-sum">Sum of Matrices</option>
+            <option value="transpose">Transpose Matrix</option>
+            <option value="square-matrix-multiply">Multiply Square Matrices</option>
+            <option value="rectangular-matrix-multiply">Multiply Rectangular Matrices</option>
+            <option value="scalar-product">Scalar Product</option>
+            <option value="vector-product">Vector Product</option>
+            <option value="mixed-product">Mixed Product</option>
+            <option value="vector-basis">Vector in Basis</option>
+        </select>
+        
+        <div id="dimension-container">
+            <label for="dimension">Choose Dimension:</label>
+            <select id="dimension">
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+
+        <!-- Блок для ввода размерностей обеих матриц -->
+        <div id="matrix-dimensions-container" style="display: none;">
+            <label for="rows1">Rows of Matrix 1 (m1):</label>
+            <input type="number" id="rows1" min="2" max="9" value="2">
+            <label for="cols1">Columns of Matrix 1 (n1):</label>
+            <input type="number" id="cols1" min="2" max="9" value="2">
+            <label for="rows2">Rows of Matrix 2 (m2):</label>
+            <input type="number" id="rows2" min="2" max="9" value="2">
+            <label for="cols2">Columns of Matrix 2 (n2):</label>
+            <input type="number" id="cols2" min="2" max="9" value="2">
+        </div>
+
+        <div id="input-container"></div>
+        <button id="calculate">Calculate</button>
+
+        <div id="output-container"></div>
+    </div>
+</body>
+</html>
