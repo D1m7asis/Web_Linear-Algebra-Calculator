@@ -1,4 +1,7 @@
-# matrix-calc
+# Linear Algebra Calculator
+
+# https://d1m7asis.github.io/Web_Linear-Algebra-Calculator
+
 Веб-страница, которая решает некоторые задачи из линейной алгебры и аналитической геометрии, а именно:
 
 #### Сумма между двумя матрицами в размерностях от 1 до 9.
